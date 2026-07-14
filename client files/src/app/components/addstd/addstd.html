@@ -1,0 +1,62 @@
+<div id="divStudentContainer">
+    <form id="frmStudent">
+
+        <div>
+            <label for="textboxStudentName">Name</label>
+            <input
+                type="text"
+                id="textboxStudentName"
+                name="textboxStudentName"
+                class="db"
+                placeholder="Enter Student Name"
+                [(ngModel)]="objStudent.name">
+        </div>
+
+        <div>
+            <label for="textboxStudentAge">Age</label>
+            <input
+                type="number"
+                id="textboxStudentAge"
+                name="textboxStudentAge"
+                class="db"
+                placeholder="Enter Student Age"
+                [(ngModel)]="objStudent.age">
+        </div>
+
+        <div>
+            <label for="textboxStudentId">Id</label>
+            <input
+                type="number"
+                id="textboxStudentId"
+                name="textboxStudentId"
+                class="db"
+                placeholder="Enter Student Id"
+                [(ngModel)]="objStudent.id">
+        </div>
+
+        <div>
+            <label for="textboxStudentBranch">Branch</label>
+            <input
+                type="text"
+                id="textboxStudentBranch"
+                name="textboxStudentBranch"
+                class="db"
+                placeholder="Enter Student Branch"
+                [(ngModel)]="objStudent.branch">
+        </div>
+
+        <span>
+            <button
+                id="btnStudentSubmit"
+                type="button"
+                (click)="addStudent()">
+                Submit
+            </button>
+
+            <p id="lblStudentSuccessMessage" *ngIf="strSuccess">
+                {{ strSuccess }}
+            </p>
+        </span>
+
+    </form>
+</div>

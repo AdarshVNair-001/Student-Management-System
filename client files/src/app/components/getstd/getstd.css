@@ -1,0 +1,26 @@
+.delete-btn {
+  margin-left: 10px;
+}
+
+.search-box {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+.search-input,
+.view-btn {
+  margin-right: 10px;
+}
+
+.student-details {
+  margin-top: 15px;
+  border: 1px dashed #666;
+  padding: 10px;
+  width: fit-content;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+}

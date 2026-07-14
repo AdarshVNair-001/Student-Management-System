@@ -1,0 +1,60 @@
+@studentdatawebapp_HostAddress = http://localhost:5048
+
+
+###
+GET http://localhost:5048/api/student
+
+###
+GET http://localhost:5048/api/student/1
+###
+POST http://localhost:5048/api/student
+Content-Type:application/json
+
+
+    {
+    "id": 6,
+    "name": "Aromal sunil",
+    "age": 20,
+    "branch": "CSE"
+    }
+     
+###
+POST http://localhost:5048/api/student/all
+Content-Type:application/json
+
+[
+     {
+    "id": 5,
+    "name": "Aaromal",
+    "age": 59,
+    "branch": "EEE"
+    },
+    {
+    "id": 6,
+    "name": "Rahul",
+    "age": 2,
+    "branch": "ECE"
+    }
+]
+###
+DELETE http://localhost:5048/api/student/6
+###
+PUT http://localhost:5048/api/student/5
+Content-Type: application/json
+
+{
+    "name": "dan"
+    
+    
+}
+###
+
+POST http://localhost:5048/api/student
+content-type:application/json
+
+{
+     "id": 7,
+    "name": "martin",
+    "age": 23,
+    "branch": "ECE"
+}

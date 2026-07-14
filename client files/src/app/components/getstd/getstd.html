@@ -1,0 +1,52 @@
+<div id="divStudentActions" class="getbar">
+
+    <button
+        id="btnStudentShowList"
+        type="button"
+        class="primary-btn"
+        (click)="GetAllStudents()">
+        Show Student List
+    </button>
+
+    <input
+        type="number"
+        id="textboxStudentSearchId"
+        name="textboxStudentSearchId"
+        placeholder="Search by ID"
+        [(ngModel)]="iSearchId" />
+
+    <button
+        id="btnStudentSearchById"
+        type="button"
+        class="primary-btn"
+        (click)="SearchStudentById()">
+        Search by ID
+    </button>
+
+</div>
+
+<ul
+    id="lstStudentList"
+    *ngIf="lstStudents.length > 0">
+
+    <li *ngFor="let objStudent of lstStudents">
+
+        {{ objStudent.id }}
+        —
+        {{ objStudent.name }}
+        —
+        {{ objStudent.age }}
+        —
+        {{ objStudent.branch }}
+
+    </li>
+
+</ul>
+
+<p
+    id="lblStudentNotFound"
+    *ngIf="lstStudents.length === 0">
+
+    No student found.
+
+</p>
