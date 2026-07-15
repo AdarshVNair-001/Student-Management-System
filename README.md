@@ -2,6 +2,8 @@
 A student management system using .NET and angular framework
 
 ---
+The Student Management System is a full-stack web application that simplifies the management of student records. It allows users to add, view,  search, and delete student information through an intuitive Angular interface, while an ASP.NET Core Web API handles business logic and securely stores data in a MySQL database using RESTful APIs.
+---
 
 ## ✨ Features
 
